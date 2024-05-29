@@ -1,0 +1,12 @@
+<div class="grid grid-cols-5 gap-4">
+    <div *ngFor="let color of colors" 
+         [style.background-color]="color"
+         [class.selected]="color === selectedColor"
+         class="... ring-offset-2 ring-4 mar"
+         tabindex="0"
+         (click)="selectColor(color)"
+         (keydown)="onKeyDown($event)">
+    </div>
+   {{SelectedCor}}
+</div><br><br>
+<button class="... focus:ring-2 mar" (click)="getSelectedColor()">Save</button>

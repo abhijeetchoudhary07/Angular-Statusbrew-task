@@ -1,0 +1,19 @@
+.mar{
+    margin: 20px;
+}
+
+/* Add your custom styles here */
+.grid {
+    display: grid;
+  }
+  
+  .grid div {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    border: 2px solid black;
+  }
+  
